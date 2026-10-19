@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata Siswa</title>
+    <link rel="stylesheet" href="latihan6.css">
+</head>
+<body>
+    <h1>Form Biodata Siswa</h1>
+
+    <form>
+        <label for="nim">NIS:</label>
+        <input type="text" id="nim" name="nim"
+        placeholder="Masukkan NIS">
+        <br><br>
+
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama"
+        placeholder="Masukkan nama lengkap">
+        <br><br>
+
+        <label for="kelas">Kelas:</label>
+        <select name="kelas" id="kelas">
+        <option value="">-- Pilih Kelas --</option>
+        <option value="X">X</option>
+        <option value="XI">XI</option>
+        <option value="XII">XII</option>
+        </select>
+        <br><br>
+
+        <input type="radio" id="akl" name="jurusan" value="akl">
+        <label for="akl">AKL</label>
+        <br>
+
+        <input type="radio" id="mplb" name="jurusan" value="mplb">
+        <label for="mplb">MPLB</label>
+        <br>
+
+        <input type="radio" id="tjkt" name="jurusan" value="TJKT">
+        <label for="tjkt">TJKT</label>
+        <br>
+
+        <input type="radio" id="tkr" name="jurusan" value="TKR">
+        <label for="tkr">TKR</label>
+        <br><br>
+
+        <label for="tempat">Tempat, Tanggal Lahir:</label>
+        <br>
+
+        <input type="text" id="tempat" name="tempat"
+        placeholder="Tempat Lahir">
+        <br>
+
+        <input type="date" name="tanggal" id="tanggal">
+        <br><br>
+
+        <label>Jenis Kelamin:</label>
+        <br>
+
+        <input type="radio" id="laki" name="gender" value="Laki-laki">
+        <label for="laki">Laki-laki</label>
+        <br>
+
+        <input type="radio" name="gender" id="perempuan" value="Perempuan">
+         <label for="perempuan">perempuan</label>
+         <br><br>
+
+         <label for="alamat">Alamat:</label>
+         <br>
+
+         <input type="text" name="alamat" id="alamat"
+         placeholder="Masukkan alamat">
+         <br><br>
+
+         <label for="email">Email:</label>
+         <br>
+
+         <input type="email" name="email" id="email"
+         placeholder="Masukkan email">
+         <br><br>
+
+         <button type="submit">submit</button>
+    </form>
+</body>
+</html>

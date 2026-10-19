@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(231, 205, 165)
+
+}
+
+.text-berjalan {
+    color:rgb(100, 68, 29);
+    display: inline-block;
+    white-space: nowrap;
+    animation: text-berjalan 12s linear infinite;
+}
+
+@keyframes text-berjalan {
+    from {
+        transfrom: tranlateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td, th {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+td {
+    height: 35px;
+}
+
+.jadwal-pelajaran {
+    text-align: center;
+}
+
+table {
+    margin: 50px auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid orangered;
+}
+
+td:empty {
+    border:none;
+}
+
+.kontainer-tabel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.link-tabel {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba (0,0,0,0.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.menu {
+    background-color: #6a5acd;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 8px 15px;
+    background-color: #836fff;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #483d8b;
+}

@@ -1,0 +1,129 @@
+/* Tema: deeppink, putih, abu-abu */
+:root {
+    --pink: rgb(255, 169, 9);
+    --pink-gelap: #c4106f;
+    --putih: #ffffff;
+    --abu-muda: #ffe13a;
+    --abu-garis: #d4d4d8;
+    --abu-teks: #52525b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px;
+    background-color: var(--abu-muda);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--abu-teks);
+    line-height: 1.5;
+}
+
+h1 {
+    max-width: 480px;
+    margin: 0 auto 20px;
+    padding: 90px 20px;
+
+    background-image: url("gedung\ smk\ yadika13.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+form {
+    max-width: 480px;
+    margin: -20px auto 0;
+    padding: 24px 20px 28px;
+    background-color: var(--putih);
+    border: 1px solid var(--abu-garis);
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Label utama */
+label {
+    font-weight: 600;
+    color: var(--abu-teks);
+}
+
+/* Input teks, tanggal, email, dan select */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    background-color: var(--putih);
+    border: 1px solid var(--abu-garis);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #27272a;
+}
+
+input::placeholder {
+    color: #a1a1aa;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px rgba(255, 20, 147, 0.2);
+}
+
+/* Checkbox dan labelnya */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    accent-color: var(--pink);
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label {
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Tombol submit gradasi orange ke yellow */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, orange, yellow);
+    color: #333333;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Efek hover */
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #ff8c00, #ffd700);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.3);
+}
+
+/* Efek fokus */
+button[type="submit"]:focus-visible {
+    outline: 3px solid #52525b;
+    outline-offset: 2px;
+}
